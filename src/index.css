@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin: 3rem;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+.gift-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gift {
+    margin-bottom: 1rem;
+    padding: 2rem;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    position: relative;
+}
+
+.gift__form-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gift__form-group:not(:last-child) {
+    margin-bottom: .5rem;
+}
+
+.gift__form-group > *:not(:last-child) {
+    margin-right: .5rem;
+}
+
+.btn-remove {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}

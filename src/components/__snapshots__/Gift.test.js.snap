@@ -1,35 +1,96 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Gift component should render properly 1`] = `
-<Gift>
-  <div>
+<Gift
+  gift={
+    Object {
+      "id": 1,
+    }
+  }
+  removeGift={[MockFunction]}
+>
+  <div
+    className="gift"
+  >
     <Form
       inline={false}
     >
       <form
         className=""
       >
-        <FormLabel
-          column={false}
-          srOnly={false}
+        <FormGroup
+          className="gift__form-group"
         >
-          <label
-            className="form-label"
+          <div
+            className="gift__form-group form-group"
           >
-            Person
-          </label>
-        </FormLabel>
-        <FormControl
-          className="input-person"
-          onChange={[Function]}
+            <FormLabel
+              column={false}
+              srOnly={false}
+            >
+              <label
+                className="form-label"
+              >
+                Person
+              </label>
+            </FormLabel>
+            <FormControl
+              className="input-person"
+              onChange={[Function]}
+            >
+              <input
+                className="input-person form-control"
+                onChange={[Function]}
+              />
+            </FormControl>
+          </div>
+        </FormGroup>
+        <FormGroup
+          className="gift__form-group"
         >
-          <input
-            className="input-person form-control"
-            onChange={[Function]}
-          />
-        </FormControl>
+          <div
+            className="gift__form-group form-group"
+          >
+            <FormLabel
+              column={false}
+              srOnly={false}
+            >
+              <label
+                className="form-label"
+              >
+                Present
+              </label>
+            </FormLabel>
+            <FormControl
+              className="input-present"
+              onChange={[Function]}
+            >
+              <input
+                className="input-present form-control"
+                onChange={[Function]}
+              />
+            </FormControl>
+          </div>
+        </FormGroup>
       </form>
     </Form>
+    <Button
+      active={false}
+      className="btn-remove"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+      variant="primary"
+    >
+      <button
+        className="btn-remove btn btn-primary"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        x
+      </button>
+    </Button>
   </div>
 </Gift>
 `;
